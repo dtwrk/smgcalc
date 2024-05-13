@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         value_for_entry_value_l = round((value_entry_bank1_l + value_entry_bank2_l),3)
         self.ui.entry_value_l.setText(str(value_for_entry_value_l))
 
-        #надо вспомнить зачем я очищал
+        #в 1 версии я очищал (код ниже). Надо вспомнить зачем 
         #pos_3_0.delete(0, END) #очищаю поле Entry
         #pos_3_1.delete(0, END) #очищаю поле Entry
 
