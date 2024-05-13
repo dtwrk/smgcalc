@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 
-from ui_mainwindow_for_khmt_smg_gui_v2 import Ui_MainWindow
+from ui_mainwindow_for_dtwrk_smg_gui_v2 import Ui_MainWindow
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
