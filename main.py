@@ -1,6 +1,5 @@
 # dtwrk_smgcalc on PySide6
 
-
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 
