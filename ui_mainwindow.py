@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'khmt_smg_gui_v2lIKFKN.ui'
+## Form generated from reading UI file 'dtwrk_smg_gui_v2DbnqxO.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(370, 325)
+        MainWindow.resize(373, 337)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayoutWidget = QWidget(self.centralwidget)
@@ -309,10 +309,27 @@ class Ui_MainWindow(object):
 
         self.gridLayout_23.addWidget(self.pushButton_calculate, 0, 0, 1, 1)
 
+        self.gridLayoutWidget_26 = QWidget(self.centralwidget)
+        self.gridLayoutWidget_26.setObjectName(u"gridLayoutWidget_26")
+        self.gridLayoutWidget_26.setGeometry(QRect(0, 210, 361, 31))
+        self.gridLayout_24 = QGridLayout(self.gridLayoutWidget_26)
+        self.gridLayout_24.setObjectName(u"gridLayout_24")
+        self.gridLayout_24.setContentsMargins(0, 0, 0, 0)
+        self.gridLayoutWidget_27 = QWidget(self.centralwidget)
+        self.gridLayoutWidget_27.setObjectName(u"gridLayoutWidget_27")
+        self.gridLayoutWidget_27.setGeometry(QRect(0, 240, 361, 31))
+        self.gridLayout_25 = QGridLayout(self.gridLayoutWidget_27)
+        self.gridLayout_25.setObjectName(u"gridLayout_25")
+        self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_about = QPushButton(self.gridLayoutWidget_27)
+        self.pushButton_about.setObjectName(u"pushButton_about")
+
+        self.gridLayout_25.addWidget(self.pushButton_about, 0, 0, 1, 1)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 370, 22))
+        self.menubar.setGeometry(QRect(0, 0, 373, 22))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -324,7 +341,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"\u041a\u0430\u043b\u044c\u043a\u0443\u043b\u044f\u0442\u043e\u0440 \u0441\u0430\u043c\u043e\u0433\u043e\u043d\u0449\u0438\u043a\u0430 v 0.2 \u043e\u0442 KhMt", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"\u041a\u0430\u043b\u044c\u043a\u0443\u043b\u044f\u0442\u043e\u0440 \u0441\u0430\u043c\u043e\u0433\u043e\u043d\u0449\u0438\u043a\u0430 v 0.2 \u043e\u0442 dtwrk", None))
         self.label_sred_percent.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0438\u0439, %:", None))
         self.label_volume_l.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u044a\u0435\u043c, \u043b:", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u0411\u0430\u043d\u043a\u0430 1, %:", None))
@@ -343,5 +360,6 @@ class Ui_MainWindow(object):
         self.label_all_in_tank.setText("")
         self.pushButton_mix.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0430\u0437\u043c\u0435\u0448\u0430\u0442\u044c ->", None))
         self.pushButton_calculate.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044c", None))
+        self.pushButton_about.setText(QCoreApplication.translate("MainWindow", u"\u041e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0435", None))
     # retranslateUi
 

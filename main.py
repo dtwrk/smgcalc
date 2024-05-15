@@ -1,7 +1,10 @@
+# dtwrk_smgcalc on PySide6
+
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 
-from ui_mainwindow_for_dtwrk_smg_gui_v2 import Ui_MainWindow
+from ui_mainwindow import Ui_MainWindow
+from ui_about import Ui_Dialog
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -10,6 +13,7 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.ui.pushButton_mix.clicked.connect(self.butt_swap)
         self.ui.pushButton_calculate.clicked.connect(self.butt_calculate)
+        self.ui.pushButton_about.clicked.connect(self.butt_about)
         
 
     def butt_swap(self): # для кнопки "Размешать ->"
@@ -37,6 +41,11 @@ class MainWindow(QMainWindow):
         self.ui.label_value_abssp_l.setText(str(value_for_label_value_abssp_l))
         self.ui.label_value_addwater_l.setText(str(value_for_label_value_addwater_l))
         self.ui.label_all_in_tank.setText(str(value_for_label_all_in_tank))
+    
+    def butt_about(self):
+        None
+        
+        
 
 
 def str_to_float(a_value):
