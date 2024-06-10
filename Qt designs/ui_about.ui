@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>382</width>
-    <height>223</height>
+    <width>601</width>
+    <height>477</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,13 +16,21 @@
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>14</x>
      <y>20</y>
-     <width>321</width>
-     <height>161</height>
+     <width>571</width>
+     <height>431</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout"/>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Калькулятор самогонщика от dtwrk&lt;/p&gt;&lt;p&gt;https://github.com/dtwrk&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;В программе используются следующие формулы:&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Размешивание:&lt;/p&gt;&lt;p&gt;((Объем в банке 1 * Градус в банке 1) + (Объем в банке 2 * Градус в банке 2)) / (Объем в банках)&lt;/p&gt;&lt;p&gt;---&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Подсчет количества абсолютного спирта:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Объем * Градус / 100&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Добавление воды:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;(Количество абсолютного спирта / 0.2) - Объем, л&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Итого в баке 20%, л:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Объем, л + Объем добавляемой воды&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

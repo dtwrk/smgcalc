@@ -1,14 +1,14 @@
 # dtwrk_smgcalc on PySide6
 
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QDialog#
 
 from ui_mainwindow import Ui_MainWindow
 from ui_about import Ui_Dialog
 
-class MainWindow(QMainWindow):
+class MainPyWindow(QMainWindow):
     def __init__(self, parent=None):
-        super(MainWindow, self).__init__(parent)
+        super(MainPyWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.pushButton_mix.clicked.connect(self.butt_swap)
@@ -43,8 +43,11 @@ class MainWindow(QMainWindow):
         self.ui.label_all_in_tank.setText(str(value_for_label_all_in_tank))
     
     def butt_about(self):
-        None
-        
+        global AboutWindow
+        AboutWindow = QDialog()
+        ui2 = Ui_Dialog()
+        ui2.setupUi(AboutWindow)
+        AboutWindow.show()
         
 
 
@@ -58,6 +61,6 @@ def str_to_float(a_value):
 
 if __name__ == '__main__':
     app = QApplication()
-    window = MainWindow()
+    window = MainPyWindow()
     window.show()
     sys.exit(app.exec())
