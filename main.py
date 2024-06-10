@@ -1,7 +1,7 @@
 # dtwrk_smgcalc on PySide6
 
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QDialog#
+from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QDialog
 
 from ui_mainwindow import Ui_MainWindow
 from ui_about import Ui_Dialog
